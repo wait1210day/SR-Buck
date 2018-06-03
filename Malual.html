@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Debug Manual</title>
+    <style>
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+	        font-size: 16px;
+	        /*color: #1d1007;*/
+            line-height:20px;
+        }
+        #title {
+            width: 700px;
+            height: auto;
+        }
+        .title_topline {
+            width: 700px;
+            border: 1px solid orange;
+            height: 0.5px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    </br>
+    </br>
+    <div id="title">
+        <div class="title_topline"></div>
+        <p align="center"><font size="5px">TL494 SR-Buck Power Supply</font></p>
+        <p align="center"><font size="5px">Debug Manual</font></p>
+        <div class="title_topline"></div>
+    </div>
+    <pre>Creat By wait1210day@tieba.baidu      Copyleft(C)     Upload BUG: 1549033655@qq.com</pre>
+    <div style="float: left; width: 320px; height: auto;">
+        <h3><font color="orange">特性: </font></h3>
+        <p>
+            + 效率高达 90% 以上</br>
+            + 采用同步整流</br>
+            + 非常低的输出纹波(>50mv)</br>
+            + 具备 5A 的电流输出能力</br>
+            + 工作频率 100Khz</br>
+            + 带有多路可拓展接口</br>
+            + 完整的过流、短路保护</br>
+            + 电压模式控制</br>
+            + 自举 MOSFET 驱动</br>
+            + 单独的运行/停止控制</br>
+            + 支持运行过程中的参数调整</br>
+            + 完整的技术支持</br>
+            + 带有输入过压脱离保护，最大可承受 24V</br> 
+            + 完全开源项目</br>
+            + 环路特性优良</br>
+        </p>
+        <h3><font color="orange">典型应用电路: </font></h3>
+    </div>
+    <div style='width:2px;float:left;height:400px;background-color:olivedrab;'></div>
+    <div style="width:8px; float:left; height: 400px;"></div>
+    <div style="width: 378px; float: left; height: auto;">
+        <h3><font color="orange">简介: </font></h3>
+        <p>
+            当下，随着对电源供应要求的日益增长，同步整流已成为了现代开关电源中最热门的话题。
+            同步整流技术的出现，对于开关电源来说，无疑是效率和发热量的改善。
+            本电路的设计理念就是：让初学者在学会同步整流技术的同时，也获得了一个高效的同步整流电源。
+            这份调试指南将十分详细地阐述电路的工作原理，以及制作、调试的方法。
+            在开始做这些之前，请先记住如下几点：1.电子制作需要的是耐心与坚持不懈的毅力。
+            2.严格选用元件，不要使用不符合电路标记的元件。3.制作完成后切勿立刻上电，先做好测试工作。
+        </p>
+        <h4><font color="olivedrab">感谢这些人，他们为本项目做出了一些贡献与帮助：</font></h4>
+        <pre>
+qishipa@tieba.baidu steadyfield@tieba.baidu
+下甜地血@tieba.baidu 阿肆04@tieba.baidu
+同步整流侠@qq.com
+        </pre>
+    </div>
+    <img src="./Images/sheet_rc11.png" height="480px" width="700px"></img>
+    </br>
+    </br>
+    <div class="title_topline"></div>
+    <pre>1    Debug Manual    By wait1210day</pre>
+    <br>
+    <br>
+    <br>
+    <h1><font size="5px">TL494 SR-Buck Power Supply</font></h1>
+    <div class="title_topline"></div>
+    <h2><font color="orange">目录: </font></h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>目录.............................................................................. 2</td>
+            </tr>
+            <tr>
+                <td>元件列表...........................................................................[]</td>
+            </tr>
+            <tr>
+                <td>组成原理...........................................................................[]</td>
+            </tr>
+            <tr>
+                <td>拓展板..............................................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> 使用拓展板的注意事项...................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> 拓展板电路.................................................................[]</td>
+            </tr>
+            <tr>
+                <td>调试指南............................................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> TL494 部分的调试........................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> IR2110 自举驱动的调试.................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> 断点测试....................................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> 开环初调试..................................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> 闭环测试....................................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> 调整电压和电流环路......................................................[]</td>
+            </tr>
+            <tr>
+                <td>==> 性能测试.....................................................................[]</td>
+            </tr>
+            <tr>
+                <td>后记..................................................................................[]</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
